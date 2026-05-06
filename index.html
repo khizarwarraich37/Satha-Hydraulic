@@ -3,178 +3,375 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AL-FAHEEM SATHA | سطحة الفهيم</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- BRANDING & SEO UPDATED -->
+    <title>Al-Faheem Satha Services | Elite Vehicle Recovery KSA</title>
+    <meta name="description" content="Professional Al-Faheem Hydraulic Satha services. 24/7 Vehicle recovery in Jeddah, Riyadh, Dammam, and Makkah. Contact almasmuhammad2020@gmail.com.">
+    <meta name="keywords" content="Al-Faheem Satha, Satha Jeddah, Satha Riyadh, Car Recovery Saudi Arabia, Hydraulic Satha">
+    
+    <!-- GOOGLE AI SCHEMA MARKUP UPDATED -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRecoveryService",
+      "name": "Al-Faheem Satha Services",
+      "telephone": "+966534274780",
+      "email": "almasmuhammad2020@gmail.com",
+      "areaServed": ["Jeddah", "Riyadh", "Dammam", "Makkah", "Madinah", "Taif", "Tabuk"],
+      "description": "Elite vehicle recovery and hydraulic transport services across KSA."
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-        :root { --gold: #d4af37; --black: #000000; --dark: #0a0a0a; }
-        body { margin: 0; padding: 0; background-color: var(--black); color: white; font-family: 'Montserrat', 'Cairo', sans-serif; scroll-behavior: smooth; }
-        
+        :root {
+            --gold: #D4AF37;
+            --black: #000000;
+            --dark-gray: #111111;
+            --white: #ffffff;
+            --red: #e63946;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', 'Cairo', sans-serif; background: var(--black); color: var(--white); }
+
         /* Navigation */
-        nav { background: var(--black); border-bottom: 2px solid var(--gold); padding: 10px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .logo-box img { height: 50px; }
-        .nav-links { display: flex; gap: 15px; }
-        .nav-links a { color: white; text-decoration: none; font-size: 10px; font-weight: bold; text-align: center; text-transform: uppercase; }
-        .nav-links a span { display: block; color: var(--gold); font-size: 9px; }
-        .contact-btns { display: flex; gap: 10px; align-items: center; }
-        .phone-num { font-weight: 900; color: var(--gold); margin-right: 10px; font-size: 14px; }
-        .btn { padding: 8px 12px; border-radius: 4px; font-weight: bold; font-size: 11px; text-decoration: none; display: flex; align-items: center; gap: 5px; text-transform: uppercase; }
-        .btn-call { background: var(--gold); color: black; }
+        .top-nav {
+            background: var(--black);
+            border-bottom: 2px solid var(--gold);
+            padding: 10px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .logo-container { display: flex; align-items: center; gap: 10px; }
+        .site-logo { height: 60px; width: auto; object-fit: contain; }
+        .logo-text { font-size: 1.1rem; font-weight: 900; color: var(--gold); text-transform: uppercase; line-height: 1.2; }
+
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.75rem; transition: 0.3s; text-align: center; }
+        .nav-links a span { display: block; font-size: 0.65rem; color: var(--gold); }
+        .nav-links a:hover { color: var(--gold); }
+        
+        .contact-tab { color: var(--gold) !important; font-weight: 900 !important; font-size: 0.9rem !important; white-space: nowrap !important; text-decoration: none; }
+
+        .action-btns { display: flex; gap: 10px; align-items: center; }
+        .btn-action { padding: 8px 15px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.75rem; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+        .btn-call { background: var(--gold); color: var(--black); }
         .btn-wa { background: #25D366; color: white; }
 
         /* Hero */
-        .hero { height: 80vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
-        .hero h1 { font-size: clamp(1.8rem, 5vw, 3.5rem); font-weight: 900; margin: 0; }
-        .hero h2 { font-family: 'Cairo'; font-size: clamp(1.5rem, 4vw, 3rem); margin: -5px 0 20px 0; }
-        .hero p { color: var(--gold); font-weight: bold; margin-bottom: 30px; font-size: 1.1rem; }
-        .hero-btn { background: var(--gold); color: black; padding: 15px 35px; font-weight: 900; text-decoration: none; border-radius: 5px; text-transform: uppercase; }
+        .hero {
+            height: 75vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('WhatsApp Image 2026-04-26 at 11.38.32 PM.jpeg');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+            padding: 0 8%;
+        }
+        .hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 10px; text-transform: uppercase; }
+        .hero p { font-size: 1.2rem; color: var(--gold); margin-bottom: 30px; font-weight: 700; }
+
+        .btn-main { background: var(--gold); color: var(--black); padding: 18px 40px; font-weight: 900; text-decoration: none; border-radius: 4px; text-transform: uppercase; transition: 0.3s; border: none; cursor: pointer; }
+        .btn-main:hover { background: var(--white); }
 
         /* Sections */
-        section { padding: 80px 8%; border-bottom: 1px solid #1a1a1a; }
-        .section-title { text-align: center; font-size: 2rem; font-weight: 900; text-transform: uppercase; margin-bottom: 40px; }
-        .section-title span { color: var(--gold); display: block; font-family: 'Cairo'; font-size: 1.5rem; margin-top: 5px; }
+        .city-section { padding: 60px 8%; background: var(--black); text-align: center; border-bottom: 1px solid #222; }
+        .city-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-top: 30px; }
+        .city-card { background: var(--dark-gray); padding: 15px; border: 1px solid #333; border-radius: 5px; text-decoration: none; color: white; transition: 0.3s; }
+        .city-card:hover { border-color: var(--gold); transform: translateY(-5px); }
 
-        /* Owner Message */
-        .owner-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .owner-box { border-left: 4px solid var(--gold); padding-left: 20px; }
-        .owner-box.ar { border-left: none; border-right: 4px solid var(--gold); padding-left: 0; padding-right: 20px; text-align: right; }
-        .owner-box h3 { color: var(--gold); margin-bottom: 15px; }
-        .owner-box p { font-style: italic; color: #ccc; line-height: 1.8; }
-
-        /* Service Cards */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: var(--dark); border-radius: 8px; overflow: hidden; border: 1px solid #1a1a1a; transition: 0.3s; text-align: center; }
-        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .card img { width: 100%; height: 220px; object-fit: cover; }
-        .card-body { padding: 20px; }
-        .card-body h4 { color: var(--gold); margin: 0 0 10px 0; }
-        .card-body p { font-size: 13px; color: #aaa; }
-
-        /* Cities */
-        .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; }
-        .city-item { background: #111; border: 1px solid #333; padding: 15px; text-align: center; border-radius: 4px; font-weight: bold; font-size: 14px; }
-        .city-item i { color: var(--gold); margin-right: 8px; }
-
-        /* Form */
-        .form-container { max-width: 800px; margin: 0 auto; border: 1px solid #333; padding: 40px; border-radius: 8px; background: #050505; }
+        .get-quote { padding: 80px 8%; background: var(--black); }
+        .quote-form-container { max-width: 650px; margin: 0 auto; background: var(--dark-gray); padding: 40px; border-radius: 8px; border: 1px solid var(--gold); }
+        
         .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; color: var(--gold); margin-bottom: 8px; font-weight: bold; font-size: 12px; }
-        .form-group input { width: 100%; padding: 12px; background: #000; border: 1px solid #222; color: white; border-radius: 4px; box-sizing: border-box; }
-        .btn-submit { background: var(--gold); color: black; border: none; width: 100%; padding: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; }
+        .form-group label { display: block; color: var(--gold); margin-bottom: 8px; font-size: 0.85rem; font-weight: 600; }
+        .form-group input { width: 100%; padding: 12px; background: var(--black); border: 1px solid #333; color: white; border-radius: 4px; }
 
-        @media (max-width: 768px) {
-            .nav-links, .phone-num { display: none; }
-            .owner-flex { grid-template-columns: 1fr; }
+        /* Footer */
+        footer { padding: 60px 8%; border-top: 1px solid #222; background: var(--black); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-box h4 { color: var(--gold); margin-bottom: 20px; text-transform: uppercase; }
+        .footer-box p { color: #888; font-size: 0.9rem; margin-bottom: 10px; }
+        .footer-box a { color: var(--gold); text-decoration: none; }
+
+        @media (max-width: 992px) {
+            .nav-links, .logo-text { display: none; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
-<nav>
-    <div class="logo-box"><img src="logo.png" alt="Logo"></div>
-    <div class="nav-links">
-        <a href="#home">Home<span>الرئيسية</span></a>
-        <a href="#services">Services<span>خدماتنا</span></a>
-        <a href="#cities">Our Cities<span>مدننا</span></a>
-        <a href="#quote">Get Quote<span>اطلب سعر</span></a>
-        <a href="#reviews">Reviews<span>التقييمات</span></a>
-    </div>
-    <div class="contact-btns">
-        <span class="phone-num">053 427 4780</span>
-        <a href="tel:0534274780" class="btn btn-call">CALL | اتصل</a>
-        <a href="https://wa.me/966534274780" class="btn btn-wa">WHATSAPP</a>
-    </div>
-</nav>
-
-<header class="hero" id="home">
-    <h1>AL-FAHEEM SATHA SERVICES</h1>
-    <h2>خدمات سطحة الفهيم</h2>
-    <p>15+ Years of Elite Vehicle Transport | أكثر من 15 عاماً من الخبرة</p>
-    <a href="#quote" class="hero-btn">Request A Quote | اطلب عرض سعر</a>
-</header>
-
-<section id="owner">
-    <div class="owner-flex">
-        <div class="owner-box">
-            <h3>OWNER'S MESSAGE</h3>
-            <p>"For over 15 years, our mission has been to provide more than just a towing service; we provide peace of mind. We treat every transport with elite precision and care."</p>
+    <nav class="top-nav">
+        <div class="logo-container">
+            <img src="logo.png" class="site-logo" alt="Al-Faheem Satha Logo">
+            <div class="logo-text">Al-Faheem Satha<br><span style="font-size: 0.9rem;">سطحة الفهيم</span></div>
         </div>
-        <div class="owner-box ar" dir="rtl">
-            <h3>كلمة المالك</h3>
-            <p>"على مدار أكثر من 15 عاماً، كانت مهمتنا تقديم ما هو أكثر من مجرد خدمة سحب؛ نحن نقدم راحة البال. نحن نعامل كل عملية نقل بدقة وعناية فائقة."</p>
+        <div class="nav-links">
+            <a href="#home">HOME <span>الرئيسية</span></a>
+            <a href="#services">SERVICES <span>خدماتنا</span></a>
+            <a href="#quote">GET QUOTE <span>اطلب سعر</span></a>
+            <a href="tel:0534274780" class="contact-tab">053 427 4780</a>
         </div>
-    </div>
-</section>
-
-<section id="services">
-    <h2 class="section-title">Premium Services <span>خدماتنا المميزة</span></h2>
-    <div class="grid">
-        <div class="card"><img src="service-1.jpg" alt="Satha"><div class="card-body"><h4>Sports Car Transport</h4><p>Hydraulic flatbeds for luxury cars.</p></div></div>
-        <div class="card"><img src="service-2.jpg" alt="Satha"><div class="card-body"><h4>Accident Recovery</h4><p>24/7 emergency response.</p></div></div>
-        <div class="card"><img src="service-3.jpg" alt="Satha"><div class="card-body"><h4>Intercity Moving</h4><p>Safe transport between all KSA cities.</p></div></div>
-        <div class="card"><img src="service-4.jpg" alt="Satha"><div class="card-body"><h4>Elite Towing</h4><p>Professional winch and towing.</p></div></div>
-        <div class="card"><img src="service-5.jpg" alt="Satha"><div class="card-body"><h4>Safe Loading</h4><p>Strict safety protocols.</p></div></div>
-        <div class="card"><img src="service-6.jpg" alt="Satha"><div class="card-body"><h4>Roadside Support</h4><p>Assistance whenever stranded.</p></div></div>
-    </div>
-</section>
-
-<section id="cities">
-    <h2 class="section-title">Coverage Areas <span>مناطق الخدمة</span></h2>
-    <div class="city-grid">
-        <div class="city-item"><i class="fa fa-map-marker-alt"></i>Jeddah | جدة</div>
-        <div class="city-item"><i class="fa fa-map-marker-alt"></i>Riyadh | الرياض</div>
-        <div class="city-item"><i class="fa fa-map-marker-alt"></i>Dammam | الدمام</div>
-        <div class="city-item"><i class="fa fa-map-marker-alt"></i>Makkah | مكة</div>
-        <div class="city-item"><i class="fa fa-map-marker-alt"></i>Madinah | المدينة</div>
-        <div class="city-item"><i class="fa fa-map-marker-alt"></i>Taif | الطائف</div>
-        <div class="city-item"><i class="fa fa-map-marker-alt"></i>Tabuk | تبوك</div>
-    </div>
-</section>
-
-<section id="quote">
-    <h2 class="section-title">Get A Quote <span>اطلب سعر</span></h2>
-    <div class="form-container">
-        <div class="form-group">
-            <label>Vehicle Type | نوع السيارة</label>
-            <input type="text" id="v_type" placeholder="e.g. SUV, Sports Car">
+        <div class="action-btns">
+            <a href="tel:0534274780" class="btn-action btn-call"><i class="fa fa-phone"></i> CALL | اتصل</a>
+            <a href="https://wa.me/966534274780" target="_blank" class="btn-action btn-wa"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
         </div>
-        <div style="display:flex; gap:20px;">
-            <div class="form-group" style="flex:1;"><label>Pickup | تحميل</label><input type="text" id="pickup"></div>
-            <div class="form-group" style="flex:1;"><label>Destination | توصيل</label><input type="text" id="dest"></div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Al-Faheem Satha Services</h1>
+        <h1 style="font-family: 'Cairo'; margin-top: -10px;">خدمات سطحة الفهيم</h1>
+        <p>Elite Vehicle Transport Since 2011</p>
+        <a href="#quote" class="btn-main">Get a Quote Now</a>
+    </section>
+
+    <section class="city-section">
+        <h2 style="color:var(--gold);">24/7 Coverage Across KSA</h2>
+        <div class="city-grid">
+            <div class="city-card">Jeddah | جدة</div>
+            <div class="city-card">Riyadh | الرياض</div>
+            <div class="city-card">Dammam | الدمام</div>
+            <div class="city-card">Makkah | مكة</div>
+            <div class="city-card">Madinah | المدينة</div>
+            <div class="city-card">Taif | الطائف</div>
         </div>
-        <button class="btn-submit" onclick="sendWhatsApp()">Submit via WhatsApp | إرسال عبر واتساب</button>
-    </div>
-</section>
+    </section>
 
-<section id="reviews" style="text-align:center;">
-    <h2 class="section-title">Customer Experience <span>آراء العملاء</span></h2>
-    <div style="background:#111; padding:40px; display:inline-block; border-radius:8px; border:1px solid var(--gold);">
-        <h3 style="color:var(--gold); margin:0;">New | جديد</h3>
-        <p>Be the first to rate us! | كن أول من يقيمنا</p>
-    </div>
-</section>
+    <section class="get-quote" id="quote">
+        <div class="quote-form-container">
+            <h2 style="text-align: center; margin-bottom: 25px; color: var(--gold);">Get A Quote</h2>
+            <form id="quoteForm">
+                <div class="form-group">
+                    <label>Vehicle Type</label>
+                    <input type="text" id="v_type" placeholder="e.g. SUV, Luxury Car" required>
+                </div>
+                <div class="form-group">
+                    <label>Pickup & Dropoff</label>
+                    <input type="text" id="loc" placeholder="From - To" required>
+                </div>
+                <button type="button" class="btn-main" style="width:100%;" onclick="sendQuote()">Send via WhatsApp</button>
+            </form>
+        </div>
+    </section>
 
-<footer style="padding:60px 8%; display:grid; grid-template-columns: 1fr 1fr; gap:50px; border-top:1px solid #1a1a1a;">
-    <div>
-        <h4 style="color:var(--gold);">AL-FAHEEM SATHA | سطحة الفهيم</h4>
-        <p style="color:#888; font-size:13px;">Professional vehicle transport solutions across Saudi Arabia.</p>
-    </div>
-    <div style="text-align:right;" dir="rtl">
-        <h4 style="color:var(--gold);">اتصل بنا | CONTACT</h4>
-        <p style="color:#888; font-size:13px;">الهاتف: 0534274780</p>
-        <p style="color:#888; font-size:13px;">الموقع: جدة، المملكة العربية السعودية</p>
-    </div>
-</footer>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-box">
+                <h4>Al-Faheem Satha</h4>
+                <p>Reliable and safe vehicle transport. Your car is our priority.</p>
+            </div>
+            <div class="footer-box">
+                <h4>Contact Us</h4>
+                <p>Phone: 053 427 4780</p>
+                <p>Email: <a href="mailto:almasmuhammad2020@gmail.com">almasmuhammad2020@gmail.com</a></p>
+                <p>Location: Jeddah, Saudi Arabia</p>
+            </div>
+        </div>
+        <p style="text-align:center; color:#444; margin-top:40px; font-size:0.8rem;">&copy; 2026 Al-Faheem Satha Services. All Rights Reserved.</p>
+    </footer>
 
-<script>
-    function sendWhatsApp() {
-        const v = document.getElementById('v_type').value;
-        const p = document.getElementById('pickup').value;
-        const d = document.getElementById('dest').value;
-        const msg = encodeURIComponent(`🚨 *NEW QUOTE*\n🚗 *Vehicle:* ${v}\n📍 *From:* ${p}\n🏁 *To:* ${d}`);
-        window.open(`https://wa.me/966534274780?text=${msg}`);
+    <script>
+        function sendQuote() {
+            const v = document.getElementById('v_type').value;
+            const l = document.getElementById('loc').value;
+            const msg = encodeURIComponent(`🚨 *QUOTE REQUEST*\nVehicle: ${v}\nRoute: ${l}`);
+            window.open(`https://wa.This updated code completely removes any mention of "Khizar Warraich." It sets **Al-Faheem Satha Services** as the primary identity in the page title (what appears on the browser tab), the metadata (what Google sees), and the contact sections.
+
+I have also ensured your email is clickable so customers can message you directly.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BRANDING & SEO UPDATED -->
+    <title>Al-Faheem Satha Services | Elite Vehicle Recovery KSA</title>
+    <meta name="description" content="Professional Al-Faheem Hydraulic Satha services. 24/7 Vehicle recovery in Jeddah, Riyadh, Dammam, and Makkah. Contact almasmuhammad2020@gmail.com.">
+    <meta name="keywords" content="Al-Faheem Satha, Satha Jeddah, Satha Riyadh, Car Recovery Saudi Arabia, Hydraulic Satha">
+    
+    <!-- GOOGLE AI SCHEMA MARKUP UPDATED -->
+    <script type="application/ld+json">
+    {
+      "@context": "[https://schema.org](https://schema.org)",
+      "@type": "AutoRecoveryService",
+      "name": "Al-Faheem Satha Services",
+      "telephone": "+966534274780",
+      "email": "almasmuhammad2020@gmail.com",
+      "areaServed": ["Jeddah", "Riyadh", "Dammam", "Makkah", "Madinah", "Taif", "Tabuk"],
+      "description": "Elite vehicle recovery and hydraulic transport services across KSA."
     }
-</script>
+    </script>
 
+    <link href="[https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap](https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css)">
+    
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --black: #000000;
+            --dark-gray: #111111;
+            --white: #ffffff;
+            --red: #e63946;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', 'Cairo', sans-serif; background: var(--black); color: var(--white); }
+
+        /* Navigation */
+        .top-nav {
+            background: var(--black);
+            border-bottom: 2px solid var(--gold);
+            padding: 10px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .logo-container { display: flex; align-items: center; gap: 10px; }
+        .site-logo { height: 60px; width: auto; object-fit: contain; }
+        .logo-text { font-size: 1.1rem; font-weight: 900; color: var(--gold); text-transform: uppercase; line-height: 1.2; }
+
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.75rem; transition: 0.3s; text-align: center; }
+        .nav-links a span { display: block; font-size: 0.65rem; color: var(--gold); }
+        .nav-links a:hover { color: var(--gold); }
+        
+        .contact-tab { color: var(--gold) !important; font-weight: 900 !important; font-size: 0.9rem !important; white-space: nowrap !important; text-decoration: none; }
+
+        .action-btns { display: flex; gap: 10px; align-items: center; }
+        .btn-action { padding: 8px 15px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.75rem; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+        .btn-call { background: var(--gold); color: var(--black); }
+        .btn-wa { background: #25D366; color: white; }
+
+        /* Hero */
+        .hero {
+            height: 75vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('WhatsApp Image 2026-04-26 at 11.38.32 PM.jpeg');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+            padding: 0 8%;
+        }
+        .hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 10px; text-transform: uppercase; }
+        .hero p { font-size: 1.2rem; color: var(--gold); margin-bottom: 30px; font-weight: 700; }
+
+        .btn-main { background: var(--gold); color: var(--black); padding: 18px 40px; font-weight: 900; text-decoration: none; border-radius: 4px; text-transform: uppercase; transition: 0.3s; border: none; cursor: pointer; }
+        .btn-main:hover { background: var(--white); }
+
+        /* Sections */
+        .city-section { padding: 60px 8%; background: var(--black); text-align: center; border-bottom: 1px solid #222; }
+        .city-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-top: 30px; }
+        .city-card { background: var(--dark-gray); padding: 15px; border: 1px solid #333; border-radius: 5px; text-decoration: none; color: white; transition: 0.3s; }
+        .city-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+
+        .get-quote { padding: 80px 8%; background: var(--black); }
+        .quote-form-container { max-width: 650px; margin: 0 auto; background: var(--dark-gray); padding: 40px; border-radius: 8px; border: 1px solid var(--gold); }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; color: var(--gold); margin-bottom: 8px; font-size: 0.85rem; font-weight: 600; }
+        .form-group input { width: 100%; padding: 12px; background: var(--black); border: 1px solid #333; color: white; border-radius: 4px; }
+
+        /* Footer */
+        footer { padding: 60px 8%; border-top: 1px solid #222; background: var(--black); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-box h4 { color: var(--gold); margin-bottom: 20px; text-transform: uppercase; }
+        .footer-box p { color: #888; font-size: 0.9rem; margin-bottom: 10px; }
+        .footer-box a { color: var(--gold); text-decoration: none; }
+
+        @media (max-width: 992px) {
+            .nav-links, .logo-text { display: none; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="logo-container">
+            <img src="logo.png" class="site-logo" alt="Al-Faheem Satha Logo">
+            <div class="logo-text">Al-Faheem Satha<br><span style="font-size: 0.9rem;">سطحة الفهيم</span></div>
+        </div>
+        <div class="nav-links">
+            <a href="#home">HOME <span>الرئيسية</span></a>
+            <a href="#services">SERVICES <span>خدماتنا</span></a>
+            <a href="#quote">GET QUOTE <span>اطلب سعر</span></a>
+            <a href="tel:0534274780" class="contact-tab">053 427 4780</a>
+        </div>
+        <div class="action-btns">
+            <a href="tel:0534274780" class="btn-action btn-call"><i class="fa fa-phone"></i> CALL | اتصل</a>
+            <a href="[https://wa.me/966534274780](https://wa.me/966534274780)" target="_blank" class="btn-action btn-wa"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Al-Faheem Satha Services</h1>
+        <h1 style="font-family: 'Cairo'; margin-top: -10px;">خدمات سطحة الفهيم</h1>
+        <p>Elite Vehicle Transport Since 2011</p>
+        <a href="#quote" class="btn-main">Get a Quote Now</a>
+    </section>
+
+    <section class="city-section">
+        <h2 style="color:var(--gold);">24/7 Coverage Across KSA</h2>
+        <div class="city-grid">
+            <div class="city-card">Jeddah | جدة</div>
+            <div class="city-card">Riyadh | الرياض</div>
+            <div class="city-card">Dammam | الدمام</div>
+            <div class="city-card">Makkah | مكة</div>
+            <div class="city-card">Madinah | المدينة</div>
+            <div class="city-card">Taif | الطائف</div>
+        </div>
+    </section>
+
+    <section class="get-quote" id="quote">
+        <div class="quote-form-container">
+            <h2 style="text-align: center; margin-bottom: 25px; color: var(--gold);">Get A Quote</h2>
+            <form id="quoteForm">
+                <div class="form-group">
+                    <label>Vehicle Type</label>
+                    <input type="text" id="v_type" placeholder="e.g. SUV, Luxury Car" required>
+                </div>
+                <div class="form-group">
+                    <label>Pickup & Dropoff</label>
+                    <input type="text" id="loc" placeholder="From - To" required>
+                </div>
+                <button type="button" class="btn-main" style="width:100%;" onclick="sendQuote()">Send via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-box">
+                <h4>Al-Faheem Satha</h4>
+                <p>Reliable and safe vehicle transport. Your car is our priority.</p>
+            </div>
+            <div class="footer-box">
+                <h4>Contact Us</h4>
+                <p>Phone: 053 427 4780</p>
+                <p>Email: <a href="mailto:almasmuhammad2020@gmail.com">almasmuhammad2020@gmail.com</a></p>
+                <p>Location: Jeddah, Saudi Arabia</p>
+            </div>
+        </div>
+        <p style="text-align:center; color:#444; margin-top:40px; font-size:0.8rem;">&copy; 2026 Al-Faheem Satha Services. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function sendQuote() {
+            const v = document.getElementById('v_type').value;
+            const l = document.getElementById('loc').value;
+            const msg = encodeURIComponent(`🚨 *QUOTE REQUEST*\nVehicle: ${v}\nRoute: ${l}`);
+            window.open(`[https://wa.me/966534274780?text=$](https://wa.me/966534274780?text=$){msg}`);
+        }
+    </script>
 </body>
 </html>
