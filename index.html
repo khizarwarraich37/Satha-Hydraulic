@@ -3,352 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Faheem Satha Services | 24/7 Recovery KSA</title>
     
-    <!-- ADVANCED SEO INJECTION -->
-    <title>Al-Faheem Satha Services | Elite Vehicle Recovery KSA | سطحة الفهيم</title>
-    <meta name="description" content="Elite Al-Faheem Hydraulic Satha services. 24/7 Premium vehicle recovery in Jeddah, Riyadh, Dammam, Makkah, Madinah, Taif, and Tabuk. Professional Winch & Towing.">
-    <meta name="keywords" content="Satha, Satha Jeddah, Satha Damam, Satha Riyadh, Satha Makkah, Satha Madinah, Satha Taif, Satha Tabook, Winch KSA, Towing Saudi Arabia, Car Recovery, Hydraulic Satha, ونش, سطحة, سطحة هيدروليك">
-    <link rel="canonical" href="https://yourwebsite.com/" />
-
-    <!-- GOOGLE AI SCHEMA MARKUP -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoRecoveryService",
-      "name": "Al-Faheem Satha Services",
-      "image": "https://yourwebsite.com/logo.png",
-      "url": "https://yourwebsite.com/",
-      "telephone": "+966534274780",
-      "email": "almasmuhammad2020@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Jeddah",
-        "addressCountry": "SA"
-      },
-      "areaServed": ["Jeddah", "Riyadh", "Dammam", "Makkah", "Madinah", "Taif", "Tabuk"]
-    }
-    </script>
-
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        :root {
-            --gold: #D4AF37;
-            --black: #000000;
-            --dark-gray: #111111;
-            --white: #ffffff;
-            --red: #e63946;
-        }
-
+        :root { --gold: #D4AF37; --black: #000000; --dark-gray: #111111; --white: #ffffff; }
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         body { font-family: 'Montserrat', 'Cairo', sans-serif; background: var(--black); color: var(--white); }
 
-        /* Top Header Navigation */
-        .top-nav {
-            background: var(--black);
-            border-bottom: 2px solid var(--gold);
-            padding: 10px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .logo-container { display: flex; align-items: center; gap: 10px; }
-        .site-logo { height: 60px; width: auto; object-fit: contain; }
-        .logo-text { font-size: 1.1rem; font-weight: 900; color: var(--gold); text-transform: uppercase; line-height: 1.2; }
+        /* Navigation */
+        .top-nav { background: var(--black); border-bottom: 2px solid var(--gold); padding: 12px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo-container { display: flex; align-items: center; gap: 12px; }
+        .site-logo { height: 50px; width: auto; }
+        .logo-text { font-size: 1.2rem; font-weight: 900; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; }
 
-        .nav-links { display: flex; gap: 20px; align-items: center; }
-        .nav-links a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.75rem; transition: 0.3s; text-align: center; }
-        .nav-links a span { display: block; font-size: 0.65rem; color: var(--gold); }
-        .nav-links a:hover { color: var(--gold); }
-        
-        /* Dropdown Styling */
-        .dropdown { position: relative; display: inline-block; }
-        .dropbtn { background: none; border: 1px solid var(--gold); color: var(--white); padding: 5px 12px; font-size: 0.75rem; cursor: pointer; border-radius: 4px; font-family: inherit; font-weight: 600; }
-        .dropdown-content {
-            display: none; position: absolute; background-color: #111; min-width: 180px;
-            box-shadow: 0px 8px 16px rgba(0,0,0,0.5); z-index: 1; border: 1px solid var(--gold);
-        }
-        .dropdown-content a { color: white; padding: 12px 16px; text-decoration: none; display: block; text-align: left !important; border-bottom: 1px solid #222; }
-        .dropdown-content a:hover { background-color: var(--gold); color: black; }
-        .dropdown:hover .dropdown-content { display: block; }
-
-        .contact-tab { color: var(--gold) !important; font-weight: 900 !important; font-size: 0.9rem !important; white-space: nowrap !important; text-decoration: none; }
-
-        .action-btns { display: flex; gap: 10px; align-items: center; }
-        .btn-action { padding: 8px 15px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.75rem; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
-        .btn-call { background: var(--gold); color: var(--black); }
-        .btn-wa { background: #25D366; color: white; }
-
-        /* Hero Section */
+        /* Hero Section using hero-bg.jpg */
         .hero {
-            height: 75vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('WhatsApp Image 2026-04-26 at 11.38.32 PM.jpeg');
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('hero-bg.jpg');
             background-size: cover; background-position: center;
             display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
-            padding: 0 8%;
+            padding: 0 5%;
         }
-        .hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 10px; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
-        .hero p { font-size: 1.2rem; color: var(--gold); margin-bottom: 30px; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.8); }
+        .hero h1 { font-size: 3.5rem; font-weight: 900; text-transform: uppercase; margin-bottom: 10px; border-bottom: 4px solid var(--gold); padding-bottom: 10px; }
+        .hero p { color: var(--gold); font-size: 1.4rem; font-weight: 700; margin: 20px 0 35px; text-transform: uppercase; }
+        .btn-main { background: var(--gold); color: var(--black); padding: 20px 45px; text-decoration: none; font-weight: 900; border-radius: 5px; transition: 0.3s; display: flex; align-items: center; gap: 12px; font-size: 1.1rem; }
+        .btn-main:hover { background: var(--white); transform: translateY(-5px); }
 
-        .btn-main { background: var(--gold); color: var(--black); padding: 18px 40px; font-weight: 900; text-decoration: none; border-radius: 4px; font-size: 1rem; border: none; cursor: pointer; transition: 0.3s; text-transform: uppercase; }
-        .btn-main:hover { background: var(--white); }
-
-        /* City Coverage Section */
-        .city-section { padding: 60px 8%; background: var(--black); text-align: center; border-bottom: 1px solid #222; }
-        .city-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-top: 30px; }
-        .city-card { background: var(--dark-gray); padding: 15px; border: 1px solid #333; border-radius: 5px; transition: 0.3s; text-decoration: none; color: white; }
-        .city-card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .city-card i { color: var(--gold); margin-bottom: 10px; display: block; font-size: 1.2rem; }
-        .city-card span { font-weight: 700; font-size: 0.9rem; }
-
-        /* Owner Message Section */
-        .owner-section { padding: 80px 8%; background: #080808; border-bottom: 1px solid #222; }
-        .owner-card { max-width: 900px; margin: 0 auto; display: flex; gap: 40px; align-items: center; }
-        .owner-text { font-style: italic; border-left: 4px solid var(--gold); padding-left: 30px; line-height: 1.8; color: #ccc; text-align: left; }
-        .owner-text.ar { border-left: none; border-right: 4px solid var(--gold); padding-left: 0; padding-right: 30px; text-align: right; margin-top: 20px; font-style: normal; }
-
-        /* Quote Form Section */
-        .get-quote { padding: 80px 8%; background: var(--black); }
-        .quote-form-container { max-width: 650px; margin: 0 auto; background: var(--dark-gray); padding: 40px; border-radius: 8px; border: 1px solid var(--gold); }
-        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; color: var(--gold); margin-bottom: 8px; font-size: 0.85rem; font-weight: 600; }
-        .form-group input { width: 100%; padding: 12px; background: var(--black); border: 1px solid #333; color: white; border-radius: 4px; font-family: inherit; }
+        /* Services Section using service-1 to service-11 */
+        .services-section { padding: 100px 8%; background: var(--dark-gray); }
+        .section-title { text-align: center; color: var(--gold); margin-bottom: 60px; font-size: 2.5rem; text-transform: uppercase; font-weight: 900; }
         
-        .btn-location { background: #444; color: white; padding: 12px; border-radius: 4px; font-weight: 700; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.3s; width: 100%; margin-top: 10px;}
-        .btn-location:hover { background: var(--red); }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
 
-        /* Service Grid */
-        .services { padding: 80px 8%; background: var(--dark-gray); }
-        .header-title { text-align: center; margin-bottom: 50px; }
-        .header-title h2 { font-size: 2.2rem; text-transform: uppercase; line-height: 1.4; }
-        .header-title span { color: var(--gold); }
-        
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .service-box { background: var(--black); border: 1px solid #222; border-radius: 8px; overflow: hidden; transition: 0.3s; }
-        .service-box:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .service-img { width: 100%; height: 220px; object-fit: cover; }
-        .service-content { padding: 25px; text-align: center; }
-        .service-content h3 { color: var(--gold); margin-bottom: 12px; font-size: 1.2rem; }
-        .service-content p { font-size: 0.9rem; color: #ccc; }
-
-        /* Review System Styles */
-        .reviews { padding: 80px 8%; text-align: center; background: var(--black); }
-        .rating-summary { background: #111; padding: 30px; border-radius: 8px; display: inline-block; margin-bottom: 30px; border: 1px solid var(--gold); }
-        .rating-summary h4 { font-size: 2.5rem; color: var(--gold); }
-        .star-input { font-size: 2.2rem; color: #333; margin: 20px 0; }
-        .star-input i { cursor: pointer; transition: 0.2s; padding: 0 5px; }
-        .star-input i.active { color: var(--gold); }
+        .service-card {
+            background: var(--black);
+            border: 1px solid #222;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+        .service-card:hover { border-color: var(--gold); transform: scale(1.03); }
+        .service-img { width: 100%; height: 280px; object-fit: cover; border-bottom: 2px solid #222; }
+        .card-content { padding: 25px; text-align: center; }
+        .card-content h3 { color: var(--gold); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
 
         /* Footer */
-        footer { padding: 60px 8%; border-top: 1px solid #222; background: var(--black); }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
-        .footer-box h4 { color: var(--gold); margin-bottom: 20px; text-transform: uppercase; }
-        .footer-box p { color: #888; font-size: 0.9rem; margin-bottom: 10px; }
-
-        @media (max-width: 992px) {
-            .nav-links, .logo-text { display: none; }
-            .form-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2rem; }
-        }
+        footer { padding: 80px 8% 40px; border-top: 3px solid var(--gold); background: var(--black); text-align: center; }
+        .footer-cta h2 { color: var(--gold); font-size: 2rem; margin-bottom: 30px; }
+        .contact-box { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 40px; }
+        .contact-item { color: var(--white); text-decoration: none; font-weight: 700; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+        .contact-item i { color: var(--gold); }
+        .locations-bar { color: #555; font-size: 0.85rem; margin-top: 50px; text-transform: uppercase; letter-spacing: 3px; border-top: 1px solid #222; padding-top: 20px; }
     </style>
 </head>
 <body>
 
     <nav class="top-nav">
         <div class="logo-container">
-            <img src="logo.png" class="site-logo" alt="Al-Faheem Satha Logo">
-            <div class="logo-text">Al-Faheem Satha<br><span style="font-size: 0.9rem;">سطحة الفهيم</span></div>
+            <img src="logo.png" class="site-logo" alt="Al-Faheem Satha">
+            <div class="logo-text">Al-Faheem Satha</div>
         </div>
-        <div class="nav-links">
-            <a href="#home">HOME <span>الرئيسية</span></a>
-            <a href="#services">SERVICES <span>خدماتنا</span></a>
-            
-            <div class="dropdown">
-                <button class="dropbtn">OUR CITIES ▾ <span>مدننا</span></button>
-                <div class="dropdown-content">
-                    <a href="#quote">Jeddah | جدة</a>
-                    <a href="#quote">Riyadh | الرياض</a>
-                    <a href="#quote">Dammam | الدمام</a>
-                    <a href="#quote">Makkah | مكة</a>
-                    <a href="#quote">Madinah | المدينة</a>
-                    <a href="#quote">Taif | الطائف</a>
-                    <a href="#quote">Tabuk | تبوك</a>
-                </div>
-            </div>
-
-            <a href="#quote">GET QUOTE <span>اطلب سعر</span></a>
-            <a href="#reviews">REVIEWS <span>التقييمات</span></a>
-            <a href="tel:0534274780" class="contact-tab">053 427 4780</a>
-        </div>
-        <div class="action-btns">
-            <a href="tel:0534274780" class="btn-action btn-call"><i class="fa fa-phone"></i> CALL | اتصل</a>
-            <a href="https://wa.me/966534274780" target="_blank" class="btn-action btn-wa"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
-        </div>
+        <a href="tel:0534274780" style="color:var(--gold); text-decoration:none; font-weight:900; font-size:1.1rem;">
+            <i class="fas fa-phone-alt"></i> 053 427 4780
+        </a>
     </nav>
 
-    <section class="hero" id="home">
-        <h1>Al-Faheem Satha Services</h1>
-        <h1 style="font-family: 'Cairo'; margin-top: -10px;">خدمات سطحة الفهيم</h1>
-        <p>15+ Years of Elite Vehicle Transport | أكثر من 15 عاماً من الخبرة</p>
-        <a href="#quote" class="btn-main">Request A Quote | اطلب عرض سعر</a>
+    <section class="hero">
+        <h1>AL-FAHEEM SATHA</h1>
+        <p>Premium Vehicle Recovery & Hydraulic Transport</p>
+        <a href="https://wa.me/966534274780" class="btn-main">
+            <i class="fab fa-whatsapp"></i> REQUEST HELP NOW
+        </a>
     </section>
 
-    <section class="city-section">
-        <div class="header-title"><h2>Coverage <span>Areas</span> | مناطق <span>الخدمة</span></h2></div>
-        <div class="city-grid">
-            <a href="#quote" class="city-card"><i class="fa fa-location-dot"></i><span>Jeddah | جدة</span></a>
-            <a href="#quote" class="city-card"><i class="fa fa-location-dot"></i><span>Riyadh | الرياض</span></a>
-            <a href="#quote" class="city-card"><i class="fa fa-location-dot"></i><span>Dammam | الدمام</span></a>
-            <a href="#quote" class="city-card"><i class="fa fa-location-dot"></i><span>Makkah | مكة</span></a>
-            <a href="#quote" class="city-card"><i class="fa fa-location-dot"></i><span>Madinah | المدينة</span></a>
-            <a href="#quote" class="city-card"><i class="fa fa-location-dot"></i><span>Taif | الطائف</span></a>
-            <a href="#quote" class="city-card"><i class="fa fa-location-dot"></i><span>Tabuk | تبوك</span></a>
-        </div>
-    </section>
-
-    <section class="owner-section">
-        <div class="owner-card" style="flex-direction: column;">
-            <div class="owner-text">
-                <h2 style="color:var(--gold); font-style:normal; margin-bottom:15px; text-transform: uppercase;">Owner's Message</h2>
-                "For over 15 years, our mission has been to provide more than just a towing service; we provide peace of mind. We treat every transport with elite precision and care."
-            </div>
-            <div class="owner-text ar">
-                <h2 style="color:var(--gold); font-family:'Cairo'; margin-bottom:15px;">كلمة المالك</h2>
-                "على مدار أكثر من 15 عاماً، كانت مهمتنا تقديم ما هو أكثر من مجرد خدمة سحب؛ نحن نقدم راحة البال. نحن نعامل كل عملية نقل بدقة وعناية فائقة."
-            </div>
-        </div>
-    </section>
-
-    <section class="get-quote" id="quote">
-        <div class="header-title"><h2>Get A <span>Quote</span> | اطلب <span>سعر</span></h2></div>
-        <div class="quote-form-container">
-            <form id="quoteForm">
-                <div class="form-group">
-                    <label>Vehicle Type | نوع السيارة</label>
-                    <input type="text" id="v_type" placeholder="e.g. Ferrari, SUV, Truck" required>
-                </div>
-                <div class="form-grid">
-                    <div class="form-group"><label>Pickup | موقع التحميل</label><input type="text" id="p_loc" required></div>
-                    <div class="form-group"><label>Destination | موقع التوصيل</label><input type="text" id="d_loc" required></div>
-                </div>
-                <button type="button" class="btn-location" onclick="getGPS()"><i class="fa fa-location-crosshairs"></i> ATTACH MY GPS | إرسال موقعي</button>
-                <button type="button" class="btn-main" style="width:100%; margin-top:20px;" onclick="sendQuote()">SUBMIT VIA WHATSAPP</button>
-            </form>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="header-title"><h2>Premium <span>Services</span> | خدماتنا <span>المميزة</span></h2></div>
+    <section class="services-section">
+        <h2 class="section-title">Our Expert Fleet</h2>
         <div class="service-grid">
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-04-26 at 11.38.32 PM (1).jpeg" class="service-img" alt="Sports Car Transport">
-                <div class="service-content"><h3>Sports Car Transport</h3><p>Hydraulic flatbeds for low-clearance luxury cars.</p></div>
-            </div>
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-04-26 at 11.38.32 PM (2).jpeg" class="service-img" alt="Accident Recovery">
-                <div class="service-content"><h3>Accident Recovery</h3><p>24/7 emergency response for all accidents.</p></div>
-            </div>
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-04-26 at 11.38.32 PM (3).jpeg" class="service-img" alt="Intercity Moving">
-                <div class="service-content"><h3>Intercity Moving</h3><p>Safe transport between all KSA cities.</p></div>
-            </div>
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-05-06 at 8.23.36 PM (1).jpeg" class="service-img" alt="Elite Towing">
-                <div class="service-content"><h3>Elite Towing</h3><p>Professional winch and towing services.</p></div>
-            </div>
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-05-06 at 8.23.38 PM (1).jpeg" class="service-img" alt="Safe Loading">
-                <div class="service-content"><h3>Safe Loading</h3><p>Strict safety protocols for secure transit.</p></div>
-            </div>
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-05-06 at 8.23.38 PM (2).jpeg" class="service-img" alt="Roadside Support">
-                <div class="service-content"><h3>Roadside Support</h3><p>Assistance whenever you are stranded.</p></div>
-            </div>
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-05-06 at 8.23.38 PM (3).jpeg" class="service-img" alt="Modern Fleet">
-                <div class="service-content"><h3>Modern Fleet</h3><p>Equipped with the latest recovery tech.</p></div>
-            </div>
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-05-06 at 8.23.38 PM (4).jpeg" class="service-img" alt="Proven Reliability">
-                <div class="service-content"><h3>Proven Reliability</h3><p>Trusted by thousands across the Kingdom.</p></div>
-            </div>
-            <div class="service-box">
-                <img src="WhatsApp Image 2026-05-06 at 8.23.38 PM.jpeg" class="service-img" alt="Fast Dispatch">
-                <div class="service-content"><h3>Fast Dispatch</h3><p>Arriving at your location in record time.</p></div>
-            </div>
+            <div class="service-card"><img src="service-1.jpg" class="service-img"><div class="card-content"><h3>Luxury Transport</h3></div></div>
+            <div class="service-card"><img src="service-2.jpg" class="service-img"><div class="card-content"><h3>Hydraulic Satha</h3></div></div>
+            <div class="service-card"><img src="service-3.jpg" class="service-img"><div class="card-content"><h3>24/7 Breakdown</h3></div></div>
+            <div class="service-card"><img src="service-4.jpg" class="service-img"><div class="card-content"><h3>Accident Recovery</h3></div></div>
+            <div class="service-card"><img src="service-5.jpg" class="service-img"><div class="card-content"><h3>Long Distance</h3></div></div>
+            <div class="service-card"><img src="service-6.jpg" class="service-img"><div class="card-content"><h3>Winch Extraction</h3></div></div>
+            <div class="service-card"><img src="service-7.jpg" class="service-img"><div class="card-content"><h3>Sports Car Specialist</h3></div></div>
+            <div class="service-card"><img src="service-8.jpg" class="service-img"><div class="card-content"><h3>Emergency Response</h3></div></div>
+            <div class="service-card"><img src="service-9.jpg" class="service-img"><div class="card-content"><h3>Flatbed Loading</h3></div></div>
+            <div class="service-card"><img src="service-10.jpg" class="service-img"><div class="card-content"><h3>Elite Support</h3></div></div>
+            <div class="service-card"><img src="service-11.jpg" class="service-img"><div class="card-content"><h3>Premium Service</h3></div></div>
         </div>
     </section>
 
-    <section class="reviews" id="reviews">
-        <div class="header-title"><h2>Customer <span>Experience</span> | آراء <span>العملاء</span></h2></div>
-        <div class="rating-summary"><h4 id="avg-val">New</h4><p id="review-status">Be the first to rate us!</p></div>
-        <div class="quote-form-container" style="max-width:500px;">
-            <div class="star-input" id="star-box">
-                <i class="fa fa-star" data-val="1"></i><i class="fa fa-star" data-val="2"></i>
-                <i class="fa fa-star" data-val="3"></i><i class="fa fa-star" data-val="4"></i>
-                <i class="fa fa-star" data-val="5"></i>
-            </div>
-            <textarea id="rev_msg" placeholder="Share your feedback..." style="width:100%; background:#000; color:#fff; border:1px solid #333; padding:15px; border-radius:4px; height:100px; margin-bottom:15px; font-family: inherit;"></textarea>
-            <button class="btn-main" style="width:100%;" onclick="submitReview()">Submit Review</button>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <div class="footer-grid">
-            <div class="footer-box">
-                <h4>Al-Faheem Satha</h4>
-                <p>Professional, Safe, and Reliable transport solutions across Saudi Arabia.</p>
-                <p>خدمات نقل آمنة واحترافية في جميع أنحاء المملكة.</p>
-            </div>
-            <div class="footer-box">
-                <h4>Quick Contact | اتصل بنا</h4>
-                <p>Phone: 053 427 4780</p>
-                <p>Email: almasmuhammad2020@gmail.com</p>
-                <p>Location: Jeddah, Saudi Arabia</p>
+    <footer>
+        <div class="footer-cta">
+            <h2>Fast Arrival. Professional Service.</h2>
+            <div class="contact-box">
+                <a href="tel:0534274780" class="contact-item"><i class="fas fa-phone-square"></i> 053 427 4780</a>
+                <a href="mailto:almasmuhammad2020@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> EMAIL US</a>
             </div>
         </div>
-        <p style="text-align:center; color:#333; margin-top:40px; font-size:0.7rem;">&copy; 2026 Al-Faheem Satha Services. All Rights Reserved.</p>
+        <p class="locations-bar">JEDDAH • RIYADH • MAKKAH • DAMMAM</p>
+        <p style="color:#222; font-size:0.7rem; margin-top:20px;">&copy; 2026 Al-Faheem Satha Services. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        let gpsLink = "Not Provided";
-        function getGPS() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(p => {
-                    gpsLink = `https://www.google.com/maps?q=${p.coords.latitude},${p.coords.longitude}`;
-                    alert("✅ GPS Location Attached!");
-                });
-            }
-        }
-        function sendQuote() {
-            const v = document.getElementById('v_type').value;
-            const p = document.getElementById('p_loc').value;
-            const d = document.getElementById('d_loc').value;
-            const msg = encodeURIComponent(`🚨 *NEW QUOTE*\nVehicle: ${v}\nPickup: ${p}\nDropoff: ${d}\nMap: ${gpsLink}`);
-            window.open(`https://wa.me/966534274780?text=${msg}`);
-        }
-        const stars = document.querySelectorAll('.star-input i');
-        let selected = 0;
-        stars.forEach(s => {
-            s.onclick = function() {
-                selected = this.getAttribute('data-val');
-                stars.forEach(st => {
-                    st.classList.remove('active');
-                    if(st.getAttribute('data-val') <= selected) st.classList.add('active');
-                });
-            }
-        });
-        function submitReview() {
-            const feedback = document.getElementById('rev_msg').value;
-            const msg = encodeURIComponent(`⭐ *REVIEW: ${selected}/5*\n${feedback}`);
-            window.open(`https://wa.me/966534274780?text=${msg}`);
-        }
-    </script>
 </body>
 </html>
